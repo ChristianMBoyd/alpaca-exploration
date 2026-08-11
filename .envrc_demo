@@ -1,2 +1,2 @@
-export CLIENT_KEY=123
+export CLIENT_ID=123
 export CLIENT_SECRET=abc
