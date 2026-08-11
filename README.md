@@ -9,8 +9,8 @@ This repo assumes that you have client key and secret values stored in a local .
 
 ### Python and a venv
 
-A requirements.txt is provided for use in a python venv.  The update_token.sh script defers to the python script get_api_token.py, which needs the requests package.
+A requirements.txt is provided for use in a python venv.  The update_api_token.sh script defers to the python script get_api_token.py, which needs the requests package.
 
-### Token bootstrapping through update_token.sh
+### Token bootstrapping through update_api_token.sh
 
-The helper script update_token.sh will update your .envrc with a new `API_TOKEN` if your credentials are otherwise valid for use in the Alpaca broker API sandbox.  This is a necessary step in order to make API calls, which use a separate token with a 15 minutes TTL.
+The helper script update_api_token.sh will update your .envrc with a new `API_TOKEN` if your credentials are otherwise valid for use in the Alpaca broker API sandbox.  This is a necessary step in order to make API calls, which use a separate token with a 15 minutes TTL.
