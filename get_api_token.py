@@ -44,4 +44,3 @@ if __name__ == "__main__":
     client_id, client_secret = get_client_credentials()
     api_token = get_api_token(client_id, client_secret)
     print(api_token)
-    
