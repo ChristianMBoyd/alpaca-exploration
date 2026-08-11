@@ -19,7 +19,7 @@ def get_client_credentials():
 
 def get_api_token(client_id, client_secret):
     """
-    Makes an API request to Alpaca's sandbox broker authentication endpoint to retrieve an API token.
+    Makes an API request to Alpaca's sandbox broker authentication endpoint to retrieve an API token using the provided credentials.
     """
     url = "https://authx.sandbox.alpaca.markets/v1/oauth2/token"
     headers = {
