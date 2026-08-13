@@ -15,3 +15,9 @@ A requirements.txt is provided for use in a python venv.  The update_api_token.s
 ### Token bootstrapping through update_api_token.sh
 
 The helper script update_api_token.sh will update your .envrc with a new `API_TOKEN` if your credentials are otherwise valid for use in the Alpaca broker API sandbox.  This is a necessary step in order to make API calls, which use a separate token with a 15 minutes TTL.
+
+## Resources
+
+### The appropriate URLs for each environment
+
+While related to authentication issues, the top of [this link](https://docs.alpaca.markets/us/docs/authentication#client-credentials) contains the various URLs that are useful for testing the trading and broker APIs, including the paper/sandbox variants.
