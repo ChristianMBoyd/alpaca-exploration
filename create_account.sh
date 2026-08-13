@@ -82,7 +82,7 @@ fi
 
 PAYLOAD=$(echo "$PAYLOAD" | jq --arg email "$EMAIL" '.contact.email_address = $email')
 
-curl -X POST https://broker-api.sandbox.alpaca.markets/v1/accounts \
+curl -X POST "$HOST/v1/accounts" \
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer $API_TOKEN" \
     -d "$PAYLOAD"
