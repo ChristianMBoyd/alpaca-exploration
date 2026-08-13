@@ -74,6 +74,14 @@ PAYLOAD='{
     "account_type": ""
 }'
 
+EMAIL="$1"
+if [ -z "$EMAIL" ]; then
+    echo "Usage: $0 <email>"
+    exit 1
+fi
+
+PAYLOAD=$(echo "$PAYLOAD" | jq --arg email "$EMAIL" '.contact.email_address = $email')
+
 curl -X POST https://broker-api.sandbox.alpaca.markets/v1/accounts \
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer $API_TOKEN" \

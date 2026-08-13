@@ -1,0 +1,94 @@
+{
+  "id": "20e8403c-6f18-40dd-8c8c-57344b556f64",
+  "account_number": "339368726",
+  "status": "SUBMITTED",
+  "crypto_status": "INACTIVE",
+  "currency": "USD",
+  "last_equity": "0",
+  "created_at": "2026-08-13T14:00:29.30546Z",
+  "contact": {
+    "email_address": "test1@gmail.com",
+    "phone_number": "7065912538",
+    "street_address": [
+      "NG"
+    ],
+    "local_street_address": null,
+    "city": "San Mateo",
+    "state": "CA",
+    "postal_code": "33345",
+    "country": "USA"
+  },
+  "identity": {
+    "given_name": "John",
+    "family_name": "Doe",
+    "date_of_birth": "1990-01-01",
+    "country_of_citizenship": "USA",
+    "country_of_birth": "USA",
+    "marital_status": "MARRIED",
+    "number_of_dependents": 5,
+    "investment_experience_with_stocks": "over_5_years",
+    "investment_experience_with_options": "over_5_years",
+    "risk_tolerance": "conservative",
+    "investment_objective": "market_speculation",
+    "investment_time_horizon": "more_than_10_years",
+    "liquidity_needs": "does_not_matter",
+    "identifications": [
+      {
+        "type": "USA_SSN"
+      }
+    ],
+    "party_type": "natural_person",
+    "tax_id_type": "USA_SSN",
+    "country_of_tax_residence": "USA",
+    "funding_source": [
+      "employment_income"
+    ],
+    "annual_income_min": "10000",
+    "annual_income_max": "10000",
+    "liquid_net_worth_min": "10000",
+    "liquid_net_worth_max": "10000",
+    "total_net_worth_min": "10000",
+    "total_net_worth_max": "10000"
+  },
+  "disclosures": {
+    "is_control_person": false,
+    "is_affiliated_exchange_or_finra": false,
+    "is_affiliated_exchange_or_iiroc": false,
+    "is_politically_exposed": false,
+    "immediate_family_exposed": false,
+    "is_discretionary": false
+  },
+  "agreements": [
+    {
+      "agreement": "customer_agreement",
+      "signed_at": "2024-08-27T10:39:34+01:00",
+      "ip_address": "185.11.11.11",
+      "revision": "23.2025.05",
+      "account_id": "20e8403c-6f18-40dd-8c8c-57344b556f64"
+    },
+    {
+      "agreement": "margin_agreement",
+      "signed_at": "2020-09-11T18:09:33Z",
+      "ip_address": "185.13.21.99",
+      "revision": "16.2021.05"
+    }
+  ],
+  "trusted_contact": {
+    "given_name": "xyz",
+    "family_name": "wyz",
+    "email_address": ""
+  },
+  "account_type": "trading",
+  "trading_type": "margin",
+  "trading_configurations": null,
+  "enabled_assets": [
+    "us_equity"
+  ],
+  "investment_objective": "market_speculation",
+  "investment_time_horizon": "more_than_10_years",
+  "risk_tolerance": "conservative",
+  "liquidity_needs": "does_not_matter",
+  "primary_account_holder_id": "b854cc8a-ec21-4d59-872f-3b9da2799514",
+  "allow_instant_ach": false,
+  "instant_ach_blocked": false
+}
