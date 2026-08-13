@@ -8,4 +8,9 @@ if [ -z "$API_TOKEN" ]; then
     exit 1
 fi
 
+# Overwrite the local .envrc file with the new API token
 sed -i "s|^export API_TOKEN=.*|export API_TOKEN='$API_TOKEN'|" .envrc
+
+# Load the new token
+direnv allow
+
