@@ -1,0 +1,13 @@
+{
+  "id": "9e2e2b5c-0e1c-498c-921a-35be36fa19dc",
+  "account_id": "20e8403c-6f18-40dd-8c8c-57344b556f64",
+  "created_at": "2026-08-13T11:01:01.76705634-04:00",
+  "updated_at": "2026-08-13T11:01:01.76705634-04:00",
+  "status": "QUEUED",
+  "account_owner_name": "Awesome Alpaca",
+  "bank_account_type": "CHECKING",
+  "bank_account_number": "32131231abc",
+  "bank_routing_number": "121000358",
+  "nickname": "Bank of America Checking",
+  "processor_token": null
+}

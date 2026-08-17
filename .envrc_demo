@@ -1,3 +1,4 @@
+export HOST='https://broker-api.sandbox.alpaca.markets'
 export CLIENT_ID=123
 export CLIENT_SECRET=abc
 export API_TOKEN=xyz
