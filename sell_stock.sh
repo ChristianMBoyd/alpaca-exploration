@@ -7,13 +7,15 @@ if [ -z "$ACCOUNT_ID" ]; then
     echo "Call this script as $0 <account_id> to specify a different account ID."
 fi
 
-curl -X POST "$HOST/v1/trading/accounts/$ACCOUNT_ID/orders" \
-    -H "Content-Type: application/json" \
-    -H "Authorization: Bearer $API_TOKEN" \
-    -d '{
-        "symbol": "AAPL",
-        "qty": 0.01,
-        "side": "sell",
-        "type": "market",
-        "time_in_force": "day"
-        }'
+DATA=$(jq -r '.side = "sell"' order_template.json)
+
+
+sell_stock() {
+    LOCAL_DATA=$(jq --arg symbol '.symbol = "$symbol"' <<< "$DATA")
+    curl -X POST "$HOST/v1/trading/accounts/$ACCOUNT_ID/orders" \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer $API_TOKEN" \
+        -d "$LOCAL_DATA"
+}
+
+sell_stock "AAPL"
