@@ -23,4 +23,3 @@ curl -X POST "$HOST/v1/accounts/$ACCOUNT_ID/transfers" \
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer $API_TOKEN" \
     -d "$PAYLOAD"
-    

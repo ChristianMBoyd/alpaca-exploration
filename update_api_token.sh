@@ -13,4 +13,3 @@ sed -i "s|^export API_TOKEN=.*|export API_TOKEN='$API_TOKEN'|" .envrc
 
 # Load the new token
 direnv allow
-

@@ -17,3 +17,4 @@ curl -X POST "$HOST/v1/accounts/$ACCOUNT_ID/ach_relationships" \
         "bank_routing_number": "121000358",
         "nickname": "Bank of America Checking"
         }'
+
