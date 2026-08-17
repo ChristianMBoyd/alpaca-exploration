@@ -11,7 +11,8 @@ DATA=$(jq -r '.side = "buy"' order_template.json)
 
 
 buy_stock() {
-    LOCAL_DATA=$(jq --arg symbol '.symbol = "$symbol"' <<< "$DATA")
+    SYMBOL="$1"
+    LOCAL_DATA=$(jq --arg symbol "$SYMBOL" '.symbol = $symbol' <<< "$DATA")
     curl -X POST "$HOST/v1/trading/accounts/$ACCOUNT_ID/orders" \
         -H "Content-Type: application/json" \
         -H "Authorization: Bearer $API_TOKEN" \
@@ -19,3 +20,13 @@ buy_stock() {
 }
 
 buy_stock "AAPL"
+buy_stock "GOOGL"
+buy_stock "MSFT"
+buy_stock "AMZN"
+buy_stock "META"
+buy_stock "NFLX"
+buy_stock "NVDA"
+buy_stock "TLSA"
+buy_stock "ORCL"
+buy_stock "CRM"
+buy_stock "JPM"
